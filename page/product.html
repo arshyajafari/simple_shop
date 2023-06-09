@@ -14,8 +14,6 @@
 
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/single-product.css" />
-
-    <!-- <script src="changeImage.js"></script> -->
   </head>
   <body>
     <div class="container-fluid">
@@ -75,8 +73,7 @@
             <img
               src="../image/3094486.jpg"
               alt="product image"
-              class="card-img-top"
-              id="product-main-image"
+              class="card-img-top main-image"
             />
           </div>
           <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-3">
@@ -84,22 +81,22 @@
               src="../image/sub-image-1.jpg"
               alt="product sub image 1"
               class="col-4 sub-images"
-              id="first-image"
-              onclick="changeFirstImage()"
+              id="firstImage"
+              onclick="changeProductImage(event)"
             />
             <img
               src="../image/sub-image-2.jpg"
               alt="product sub image 2"
               class="col-4 sub-images"
-              id="second-image"
-              onclick="changeSecondImage()"
+              id="secondImage"
+              onclick="changeProductImage(event)"
             />
             <img
               src="../image/sub-image-3.jpg"
               alt="product sub image 3"
               class="col-4 sub-images"
-              id="third-image"
-              onclick="changeThirdImage()"
+              id="thirdImage"
+              onclick="changeProductImage(event)"
             />
           </div>
         </div>
@@ -336,5 +333,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/changeImg.js"></script>
   </body>
 </html>
