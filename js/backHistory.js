@@ -1,0 +1,3 @@
+const backHistory = () => {
+  history.back();
+};
