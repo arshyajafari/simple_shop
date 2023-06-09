@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product</title>
+
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/fontawesome-6.3.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/single-product.css" />
+
+    <!-- <script src="changeImage.js"></script> -->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-light mx-2">
+        <a href="" class="navbar-brand brands">Simple Shop</a>
+        <form
+          class="w-50 form-group search-forms d-none d-sm-block position-relative"
+          method="post"
+        >
+          <input class="form-control" type="search" placeholder="Search" />
+          <button class="btn border-0 position-absolute top-0 end-0">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <div class="d-inline-flex align-items-center">
+          <a
+            href="./login.html"
+            class="btn btn-outline-success border-0 text-center py-1 px-2"
+          >
+            <i class="fa fa-sign-in fs-6 mx-0 mx-sm-2"></i>
+          </a>
+          <a href="./cart.html" class="btn border-0"
+            ><i class="fa fa-cart-shopping fs-6"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="text-justify text-lg-start text-muted mx-2 product-location">
+        <a href="" class="text-reset text-decoration-none">Simple Shop</a>
+        <span>/</span>
+        <a href="" class="text-reset text-decoration-none">Digital Product</a>
+        <span>/</span>
+        <a href="" class="text-reset text-decoration-none">PC Accessories</a>
+        <span>/</span>
+        <a href="" class="text-reset text-decoration-none">Mouse</a>
+      </div>
+
+      <div
+        class="w-100 row row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 border-bottom mt-5 mx-auto mb-5 pb-3"
+      >
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="d-flex position-relative m-0 my-1">
+            <div class="d-flex flex-column position-absolute top-0 m-0 p-0">
+              <button class="btn text-center m-0 p-1">
+                <i class="far fa-heart fs-6"></i>
+              </button>
+              <button class="btn text-center m-0 p-1">
+                <i class="fas fa-cart-plus fs-6"></i>
+              </button>
+              <button class="btn text-center m-0 p-1">
+                <i class="fas fa-balance-scale fs-6"></i>
+              </button>
+              <button class="btn text-center m-0 p-1">
+                <i class="fas fa-list-ul fs-6"></i>
+              </button>
+            </div>
+            <img
+              src="../image/3094486.jpg"
+              alt="product image"
+              class="card-img-top"
+              id="product-main-image"
+            />
+          </div>
+          <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-3">
+            <img
+              src="../image/sub-image-1.jpg"
+              alt="product sub image 1"
+              class="col-4 sub-images"
+              id="first-image"
+              onclick="changeFirstImage()"
+            />
+            <img
+              src="../image/sub-image-2.jpg"
+              alt="product sub image 2"
+              class="col-4 sub-images"
+              id="second-image"
+              onclick="changeSecondImage()"
+            />
+            <img
+              src="../image/sub-image-3.jpg"
+              alt="product sub image 3"
+              class="col-4 sub-images"
+              id="third-image"
+              onclick="changeThirdImage()"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-sm-0 mt-4">
+          <h5 class="card-title vazir-font">TSCO TM 762 G Mouse</h5>
+
+          <div class="d-flex align-content-center mt-4 product-color">
+            <h6 class="me-1 text-decoration-underline">Color:</h6>
+            <span class="me-1 select-color"></span>
+            <span class="me-1"></span>
+            <span class="me-1"></span>
+            <span></span>
+          </div>
+
+          <div class="mt-3">
+            <h6 class="text-decoration-underline">Product Properties:</h6>
+            <ul class="properties-list vazir-font">
+              <li>Connection type: with wire</li>
+              <li>Interface type: USB port</li>
+              <li>Sensor type: Optical</li>
+              <li>Accuracy range: 800 to 1600</li>
+              <li>Ability to work with both hands: No</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-lg-0 mt-4">
+          <div class="border-bottom d-flex pb-3 vazir-font">
+            <i class="fa fa-store text-danger me-2 margin-icon"></i>
+            <div class="d-flex flex-column">
+              <span class="card-title">Seller: Amazon</span>
+              <span class="card-subtitle text-muted">
+                %86 buyer satisfaction
+              </span>
+            </div>
+          </div>
+
+          <div class="border-bottom d-flex py-3 vazir-font">
+            <i
+              class="fa-regular fa-bookmark text-info me-2 p-0 margin-icon"
+            ></i>
+            <span class="card-text m-0 p-0">Warranty of authenticity</span>
+          </div>
+
+          <div class="d-flex align-items-center m-0 pt-3 pb-0 vazir-font">
+            <span class="me-2 mb-0 pb-0">Price:</span>
+            <span class="text-muted mb-0 pb-0">$120.20</span>
+          </div>
+
+          <a href="./login.html" class="w-100 btn btn-outline-success mt-3"
+            >Buy</a
+          >
+        </div>
+      </div>
+
+      <div>
+        <ul class="list-unstyled">
+          <li class="list">
+            <h6 class="title-list">Review</h6>
+            <p class="subtitle-list">Overview</p>
+            <p class="text-muted vazir-font product-title-list">
+              Tsco TM 762 G Mouse
+            </p>
+            <p class="description-list vazir-font">
+              "TM 762 G" mouse is designed by "Tsco" company and will be
+              connected to the device wirelessly. This mouse is connected to a
+              computer or laptop through a USB port and its cable is 1.5 meters
+              long. This cable is covered with a linen cover so that it is
+              resistant to many damages and does not damage the cable while
+              working with the mouse. This Tsco mouse has 6 keys, of which three
+              are the main keys, one key to adjust DPI and two keys on the sides
+              to do Back/Forward. According to the manufacturer, the maximum DPI
+              in the TM 762 G model from the Tsco mouse series is 1600 DPI;
+              Also, the minimum accuracy in this product is 1200 DPI, and if
+              needed, you can decrease or increase it using the DPI key on the
+              mouse. The type of sensor in this model of Tsco mice is also
+              optical so that there is no problem when using the mouse on
+              different surfaces.
+            </p>
+          </li>
+          <li class="list">
+            <h6 class="title-list">Specifications</h6>
+            <p class="subtitle-list">Product specifications</p>
+            <p class="text-muted vazir-font product-title-list">
+              Tsco TM 762 G Mouse
+            </p>
+            <div class="row row-cols-3">
+              <div class="col-4">
+                <p class="description-list">Physical character</p>
+              </div>
+              <div class="col-4">
+                <p class="vazir-font product-title-list">Dimensions:</p>
+                <p class="vazir-font product-title-list">Weight:</p>
+                <p class="vazir-font product-title-list">Number of keys:</p>
+                <p class="vazir-font product-title-list">On and Off switch:</p>
+              </div>
+              <div class="col-4">
+                <p class="vazir-font description-list">40 × 78 × 133 mm</p>
+                <p class="vazir-font description-list">157 gr</p>
+                <p class="vazir-font description-list">6</p>
+                <p class="vazir-font description-list">No</p>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <h6 class="title-list">Product score</h6>
+            <p class="subtitle-list">User points to product</p>
+            <p class="text-muted vazir-font product-title-list">
+              Tsco TM 762 G Mouse
+            </p>
+            <div class="w-50 d-flex justify-content-center m-auto">
+              <div class="col-6 d-flex align-items-center flex-column">
+                <p class="vazir-font product-title-list">
+                  Accuracy and performance
+                </p>
+                <p class="vazir-font product-title-list">
+                  Design and build quality
+                </p>
+                <p class="vazir-font product-title-list">
+                  Features and capabilities
+                </p>
+                <p class="vazir-font product-title-list">Value for money</p>
+              </div>
+              <div class="col-6 d-flex align-items-center flex-column">
+                <p class="vazir-font description-list">4.5</p>
+                <p class="vazir-font description-list">4.5</p>
+                <p class="vazir-font description-list">4.5</p>
+                <p class="vazir-font description-list">4.5</p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center vazir-font mt-5"
+            >
+              <span class="me-3">4.5<sub>(5)</sub></span>
+              <span class="text-warning fa fa-star"></span>
+              <span class="text-warning fa fa-star"></span>
+              <span class="text-warning fa fa-star"></span>
+              <span class="text-warning fa fa-star"></span>
+              <span class="text-warning fa fa-star-half-alt"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center text-lg-start text-muted">
+        <div>
+          <div class="text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-4 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Simple Shop</h5>
+                <p style="text-align: justify">
+                  As an online store, by adhering to three principles, payment
+                  on site, 7-day product return guarantee, and guaranteeing the
+                  originality of the product, it has succeeded in becoming the
+                  largest online store in Iran along with the world's most
+                  prestigious stores.
+                </p>
+              </div>
+              <div class="col-md-3 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Products</h5>
+                <p>
+                  <a href="" class="text-reset">Laptop & PC</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Smart phone</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Laptop & PC accessories</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Smart phone accessories</a>
+                </p>
+              </div>
+              <div class="col-md-1 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Links</h5>
+                <p>
+                  <a href="" class="text-reset">Login</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Setting</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Offer</a>
+                </p>
+                <p>
+                  <a href="" class="text-reset">Help</a>
+                </p>
+              </div>
+              <div class="col-md-3 mx-auto mb-md-0 mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">About us</h5>
+                <p>
+                  <i class="fa fa-map-location-dot me-1"></i>
+                  <span class="vazir-font"
+                    >Qa'em shahr, Mazandaran Province</span
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-envelope-open-text me-1"></i>
+                  <span class="vazir-font">arshyajafari11@gmail.com</span>
+                </p>
+                <p>
+                  <i class="fa fa-phone me-1"></i>
+                  <span class="vazir-font">09339753595</span>
+                </p>
+                <div>
+                  <a class="text-reset text-decoration-none me-4">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a class="text-reset text-decoration-none me-4">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a class="text-reset text-decoration-none me-4">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a class="text-reset text-decoration-none me-4">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                  <a class="text-reset text-decoration-none me-4">
+                    <i class="fab fa-github-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center p-4 lalezar-font">
+          © 2023
+          <a href="https://github.com/arshyajafari" class="text-reset fw-bold"
+            >Arshya Jafari</a
+          >. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
