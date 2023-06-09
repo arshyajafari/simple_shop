@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Aviny";
+  src: local("Aviny"), url(../font/Aviny.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans_FaNum"),
+    url(../font/IRANSans_FaNum.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lalezar-Regular";
+  src: local("Lalezar-Regular"),
+    url(../font/Lalezar-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Vazirmatn-Medium";
+  src: local("Vazirmatn-Medium"),
+    url(../font/Vazirmatn-Medium.ttf) format("truetype");
+}
+
+body {
+  background-color: #f8f8fa;
+  font-family: "IRANSans";
+}
+
+.aviny-font {
+  font-family: "Aviny";
+}
+
+.iransans-font {
+  font-family: "IRANSans";
+}
+
+.lalezar-font {
+  font-family: "Lalezar-Regular";
+}
+
+.vazir-font {
+  font-family: "Vazirmatn-medium";
+}
